@@ -18,7 +18,7 @@ jobs:
       with:
         tool: typos-cli
     - name: Check Formatting
-      run: cd src-tauri && cargo +nightly fmt --all -- --check
+      run: cd src-tauri && cargo +nightly fmt --all -- --check && cd ..
     - name: Run Typos
       run: typos
 
