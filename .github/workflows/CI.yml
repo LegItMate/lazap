@@ -17,8 +17,8 @@ jobs:
     - uses: taiki-e/install-action@v2
       with:
         tool: typos-cli
-    - name: Check Formatting
-      run: cd src-tauri && cargo +nightly fmt --all -- --check && cd ..
+    - name: Check Rust Formatting
+      run: cd src-tauri && cargo +nightly fmt --all -- --check
     - name: Run Typos
       run: typos
 
